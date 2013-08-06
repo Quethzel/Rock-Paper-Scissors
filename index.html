@@ -1,0 +1,61 @@
+<!--
+* Piedra, Papel o Tijeras
+* =======================
+*
+* Rubidio
+* http://www.rubidio.com
+*
+* Copyright (c) 2013 H.Quethzel Díaz Zárate
+*
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+-->
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css"> <!-- stylesheet -->
+	<script type="text/javascript" src="js/logic.js"></script> <!-- logica del juego -->
+	<title>Rubidio</title>
+</head>
+<body>
+	<div id="header">
+		<div id="logo">
+			<h1><a href="www.rubidio.com">Rubidio</a></h1>
+			<span>Spanish Games</span>
+		</div>
+	</div>
+
+	<div id="Qmodal">
+		<a href="#" onClick="ocultarVentana();"><p class="closeModal">x</p></a>
+		<div><img id="win" class="option" src="" width="150" height="150"></div>
+		<div class="msj" id="msj"></div>
+	</div>
+	<div id="bloquear"></div>
+
+	<div id="container">
+		<div class="game-title"><h2>Piedra Papel o Tijeras</h2></div>
+		<div id="user">
+			<div class="gamers"><input type="text" id="nom" placeholder="Escribe tu nombre aqui"></div>
+			<div><a id="op1" href="#" onClick="inicio('piedra');"><img class="option" src="img/piedra.png" width="150" height="150"></a></div>
+			<div><a id="op2" href="#" onClick="inicio('papel');"><img class="option" src="img/papel.png" width="150" height="150"></a></div>
+			<div><a id="op3" href="#" onClick="inicio('tijeras');"><img class="option" src="img/tijeras.png" width="150" height="150"></a></div>
+		</div>
+
+		<div id="vs"><p>VS</p></div>
+
+		<div id="mac">
+			<div class="gamers"><label>Bot</label></div>
+			<div><a href="#"><img class="option" id="imgIA" src="img/random.png" width="326" height="326"></a></div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<div class="credits">
+			<p>Codificado en México</p>
+			<p>Inspirado por <a class="link" href="http://www.codecademy.com/es" target=_blank>Codecademy</a></p>
+		</div>		
+		<div id="copy"><hr><p>&copy; 2013 All rights reserved</p></div>
+	</div>
+</body>
+</html>

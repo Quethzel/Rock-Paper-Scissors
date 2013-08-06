@@ -1,0 +1,219 @@
+/**
+* Piedra, Papel o Tijeras
+* -----------------------
+*
+* Rubidio
+* http://www.rubidio.com
+*
+* Copyright (c) 2013 H.Quethzel Díaz Zárate
+*
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+* {
+	margin: 0;
+	padding: 0;
+}
+* a { text-decoration: none; }
+* li { list-style-type: none; }
+body {
+	background-color: #FFF;
+}
+/*
+	=== HEADER ===
+*/
+#header {
+	padding: 1px 10px;
+	font-family: Trebuchet MS, Arial;
+	background-color: #262324;
+	overflow: hidden;
+	height: 75px;
+}
+/*
+	--- logo ---
+*/
+#logo {
+	margin-top: 5px;
+	width: 200px;
+	height: 64px;
+	padding: 0 3px;
+	background-image: url("../img/logo.png");
+	background-position: bottom left;
+	background-repeat: no-repeat;
+	display: inline-block;
+	color: #FFF;
+}
+#logo h1 {
+	margin-top: 13px;
+	text-align: justify;
+}
+#logo h1 a {
+	padding-left: 60px;
+	color: #FFF;
+}
+#logo span { 
+	float: left;
+	font-style: italic; 
+	font-size: .8em; 
+	margin-left: 100px;
+	margin-top: -5px;
+}
+/*
+	=== CONTAINER ===
+*/
+#container {
+	background-color: #FFF;
+	margin: 0;
+	overflow: hidden;
+	position: relative;
+	min-height: 463px;
+}
+/* 
+	=== FOOTER ===
+*/
+#footer {
+	position: relative;
+	min-height: 220px;
+	padding: 5px;
+	color: #BCBEC0;
+	background-color: #262324;
+	font-family: sans-serif, Helvetica;
+	font-size: 12px;
+	line-height: 19px;
+	margin-bottom: -1px;
+}
+.nav-footer {
+	color: #BCBEC0;
+}
+.nav-footer:hover {
+	color: #DF01D7;
+}
+.link {
+	color: #BCBEC0;
+	display: inline-block;
+}
+.link:hover {
+	border-bottom: 1px dotted #DF01D7;
+	padding-bottom: 2px; 
+}
+/*
+	--- text left-top  ---
+*/
+.about-some {
+	width: 30%;
+	margin: 20px 0 0 150px;
+	padding: 3px 0;
+	float: left;
+}
+.about-some span {
+	font-weight: bolder;
+	color: #FFF;
+}
+/*
+	--- text right-top ---
+*/
+.credits {
+	width: 15%;
+	margin: 20px 200px 0 0;
+	float: right;
+}
+.credits a {
+	color: #BCBEC0;
+	text-decoration: none;
+}
+/*
+	--- copyright ---
+*/
+#copy {
+	clear: both;
+	position: absolute;
+	width: 90%;
+	bottom: 5px;
+	left: 5%;
+	margin-top: 13px;
+	color: #777;
+	text-align: center;
+	padding-bottom: 5px;
+}
+#copy hr {
+	width: 100%;
+	margin: 0 auto;
+    border: 0;
+    height: 1px;
+    background: -moz-linear-gradient(left center, transparent, #2E3133, transparent);
+    background: -webkit-gradient(linear, left center, right center,
+                                 color-stop(0, transparent),
+                                 color-stop(0.5, #555),
+                                 color-stop(1, transparent));
+}
+/*
+	=== WINDOW MODAL === 
+*/
+#Qmodal {
+	display: none;
+	position: absolute;
+	width: 600px;
+	height: 320px;
+	top: 5%;
+	left: 50%;
+	margin-top: 100px;
+	margin-left: -300px;
+	z-index: 500;
+	background-color: #FFF;
+	color: #000;
+	padding: 5px;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	-webkit-border-radius:25px 0 25px 25px;
+	   -moz-border-radius:25px 0 25px 25px;
+	    -ms-border-radius:25px 0 25px 25px;
+	     -o-border-radius:25px 0 25px 25px;
+	       border-radius: 25px 0 25px 25px;
+}
+/*
+	--- close modal ---
+*/
+.closeModal {
+	margin-top: -15px;
+	margin-left: 585px;
+	color: #333;
+	font-size: 1.7em;
+	font-weight: bold;
+	font-family: Trebuchet MS, Arial;
+}
+#Qmodal img { 
+	box-shadow: 1px 1px 10px #333;
+}
+@font-face {
+	font-family: RefusTrip;
+	src:url(../fonts/REFUSETR.ttf)format('truetype');
+}
+/*
+	--- msj modal ---
+*/
+.msj {
+	font-family: RefusTrip, Trebuchet MS;
+	font-size: 2em;
+	text-align: center;
+	display: block;
+	width: 50% !important;
+	margin: 3% 0 3% 25%;
+	padding: 5px;
+}
+/*
+	=== BLOCK SCREEN ===
+*/
+#bloquear {
+	display: none;
+	position: absolute;
+	background-color: #000;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	opacity:0.6; 
+	-moz-opacity: 0.6;
+	-o-opacity: 0.6;
+	filter: alpha(opacity=60);
+}

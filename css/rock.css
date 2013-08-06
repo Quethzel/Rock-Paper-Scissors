@@ -1,0 +1,89 @@
+/**
+* Piedra, Papel o Tijeras
+* -----------------------
+*
+* Rubidio
+* http://www.rubidio.com
+*
+* Copyright (c) 2013 H.Quethzel Díaz Zárate
+*
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+ .game-title {
+	font-family: Lucida Sans Unicode;
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 10px 0;
+}
+#container {
+	background-color: #F7F5F2;
+	/*border: 1px solid violet; /*  --- border --- */
+	margin: 10px;
+	overflow: hidden;
+	position: relative;
+}
+#user {
+	/*border: 1px solid orange; /*  --- border --- */
+	width: 40%;
+	margin: 5px;
+	padding: 5px;
+	float: left;
+}
+#mac {
+	/*border: 1px solid orange; /*  --- border --- */
+	width: 40%;
+	margin: 5px;
+	padding: 5px;
+	float: right;
+}
+#mac img { box-shadow: 1px -1px 1px #450000; }
+#vs {
+	position: absolute;
+	width: auto;
+	margin-left: 46%;
+	top: 35%;
+	text-align: center;
+	font-size: 5em;
+	font-family: Century Gothic, impact;
+	/*border: 1px dashed #000; /*  --- border --- */
+}
+.gamers label, input[type=text] {
+	display: block;
+	width: 45%;
+	padding: 10px;
+	font-size: 1.2em !important;
+	font-family: Lucida Sans Unicode;
+	border-bottom: 1px dotted #000 !important;
+	background: transparent;
+	border: none;
+	margin-bottom: 15px;
+}
+/*#user div { border: 1px solid #000; margin: 1px 0; padding: 1px; }*/
+
+#user a {
+	border-radius: 100%;
+	display: inherit; 
+	width:150px; 
+	margin: auto;
+	-webkit-box-shadow: 1px 0 5px #777;
+	   -moz-box-shadow: 1px 0 5px #777;
+	   	-ms-box-shadow: 1px 0 5px #777;
+	     -o-box-shadow: 1px 0 5px #777;
+	        box-shadow: 1px 0 5px #777;
+}
+#user a:hover {
+	-webkit-box-shadow: 1px 0 10px #424242;
+	   -moz-box-shadow: 1px 0 10px #424242;
+	   	-ms-box-shadow: 1px 0 10px #424242;
+	     -o-box-shadow: 1px 0 10px #424242;
+	        box-shadow: 1px 0 10px #424242;	
+}
+.option {
+	border-radius: 100%; /* creo que no necesito esta linea ya que la imagen ya es redonda */
+	width: auto;
+	margin: 0 auto; /* al parecer no es neseario esta linea */
+	display: block;
+}
+#user div:nth-child(3) { width: 50%; float: left; margin-bottom: 20px; }
+#user div:nth-child(4) { width: 50%; float: left; margin-bottom: 20px;}  
