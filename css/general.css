@@ -72,7 +72,9 @@ body {
 	=== FOOTER ===
 */
 #footer {
-	position: relative;
+	position: fixed;
+	bottom: 1px;
+	width: 100%;
 	min-height: 220px;
 	padding: 5px;
 	color: #BCBEC0;
@@ -161,7 +163,7 @@ body {
 	z-index: 500;
 	background-color: #FFF;
 	color: #000;
-	padding: 5px;
+	padding: 10px;
 	background-position: bottom right;
 	background-repeat: no-repeat;
 	-webkit-border-radius:25px 0 25px 25px;
